@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+article {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    gap: 8px;
+}
